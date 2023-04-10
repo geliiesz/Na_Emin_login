@@ -1,0 +1,289 @@
+/*body properties*/
+
+/*removes default margin and padding; creates a two-colored background with the colors vertically separated in half*/
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #FFF3E2 0%, #FFF3E2 50%, #FFC1B5 50%, #FFC1B5 100%);
+}
+
+/*sets smooth scrolling*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*sets custom colors when text is selected on the page*/
+::-moz-selection{
+    background: #F15252;
+    color: white;
+}
+::selection{
+    text-shadow: none; /*no text shadow because it looks weird*/
+    color: white;
+    background: #F15252;
+}
+
+/*header properties*/
+
+/*sets position to be sticky at the top; is infront of all other elements with the z-index; sets height and background color*/
+header{
+    top: 0;
+    z-index: 1;
+    position: sticky;
+    height: 95px;
+    background-color: #FF7070;
+}
+
+/*sets width and height of logo*/
+.logo{
+    width: 95px;
+    height: 95px;
+}
+
+/*sets position, padding, font, font color, and shadow of title in the header*/
+.title{
+    float: right;
+    padding: 36px 15px 0px 0px;
+    font-family: 'Lora', serif;
+    color: #FFF3E2;
+    text-shadow: 1px 1px #8F2929;
+}
+
+/*content properties*/
+
+/*displays both cards in an inline-flex*/
+main{
+    display: inline-flex;
+}
+
+/*sets font for all bootstrap cards*/
+.card{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*sets width, margin, and box shadow of intro card*/
+#cardIntro{
+    width: 615px;
+    margin: 8.5px 0px 10px 8px;
+    box-shadow: 0.3px 3px 5px #8F2929; /*pretty shadow that is placed 0.3px horizontally, 3px vertically, with a 5px radius*/
+}
+
+/*sets text alignment, size, weight, font color, and shadow of card title*/
+.card-title{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color: #E06010;
+    text-shadow: 1px 0.5px #F99A80;
+}
+
+/*sets text alignment and font color and shadow*/
+.card-text{
+    text-align: left;
+    color: #8F2929;
+    text-shadow: 0.5px 0.5px #B47039;
+}
+
+/*actual login card properties*/
+
+/*sets position, sticky property, color, and shadow of login card*/
+#cardLogin{
+    top: 161px;
+    margin: 0px 0px 10px 47px;
+    position: sticky;
+    color: #8E3B08;
+    box-shadow: 0.3px 3px 5px #8F2929;
+}
+
+/*sets text alignment, font size, weight, color, and shadow of card header*/
+.card-header{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 1px 1px #BC6218;
+}
+
+/*sets alignment of contents in card body*/
+.card-body{
+    text-align: center;
+}
+
+/*message alert properties*/
+
+/*sets text alignment and color*/
+#msgCheck{
+    text-align: center;
+    color: #EA5A01;
+}
+/*sets color of asterisks at the end of empty fields*/
+span{
+    color: #EA5A01;
+}
+
+/*minor tweaks on the text and input boxes*/
+
+/*sets "username: " and "password: " alignment*/
+.user-pass{
+    text-align: left;
+}
+/*sets width and margin of input boxes*/
+input{
+    width: 75%;
+    margin-left: 10px;
+}
+/*sets slightly larger margin on second input box because it's not aligned*/
+#password{
+    margin-left: 16.1px;
+}
+
+/*input box pseudo-classes*/
+
+/*sets different border color when hovered on*/
+input:hover{
+    border-width: 2px; /*width and radius made to (almost) match bootstrap*/
+    border-radius: 3px;
+    border-color: #FFBC92;
+}
+/*sets different background color when clicked on*/
+input:focus{
+    background-color: #FFDFB2;
+}
+
+/*button properties*/
+
+/*sets button colors*/
+.btn{
+    color: whitesmoke;
+    text-shadow: 1px 1px #BC6218;
+    background-color: #E69655;
+}
+
+/*button pseduo-class*/
+
+/*sets no text shadow and new color when hovered on*/
+.btn:hover{
+    text-shadow: none;
+    background-color: #ECA870;
+}
+
+/*link pseudo-classes*/
+
+/*sets different colors and text decorations when displayed, hovered on, and clicked on*/
+a:link, a:visited{
+    text-decoration: none;
+    color: #8E3B08;
+}
+a:hover{
+    text-decoration: underline;
+    color: #EA5A01;
+}
+a:active{
+    text-decoration: none;
+    color: #EA5A01;
+}
+
+/*footer properties*/
+
+/*sets footer position and background color*/
+footer{
+    bottom: 0;
+    margin-top: 10px;
+    background-color: #E74646;
+}
+
+/*sets logo and title to be displayed in an inline-flex and translated somewhere near the middle*/
+.logo-title{
+    display: inline-flex;
+    transform: translateX(415px);
+}
+/*sets logo width and height*/
+footer .logo{
+    width: 85px;
+    height: 85px;
+}
+/*sets position, font, size, color, and shadow*/
+footer .title{
+    padding-top: 35px;
+    font-size: large;
+    font-family: 'Lora', serif;
+    color: #FFF3E2;
+    text-shadow: 1px 1px #8F2929;
+}
+
+/*sets font, color, and position of contact div*/
+.contact{
+    font-family: 'Lora', serif;
+    color: #FFF3E2;
+    padding-left: 500px;
+}
+
+/*sets position of heading*/
+.c-head{
+    text-align: left;
+    padding-top: 10px;
+}
+/*sets size of contact details*/
+.info{
+    font-size: small;
+    text-align: left;
+}
+
+/*socmed sprites*/
+
+#fb{
+    background: url('images/sprites.png') no-repeat -12px -50px;
+	width: 151px;
+	height: 151px;
+    transform: scale(0.3);
+    margin: -55px 0px 0px -53px;
+}
+#ig{
+    background: url('images/sprites.png') no-repeat -174px -50px;
+	width: 151px;
+	height: 151px;
+    transform: scale(0.3);
+    margin: -55px 0px 0px -65px;
+}
+#twt{
+    background: url('images/sprites.png') no-repeat -336px -50px;
+	width: 151px;
+	height: 151px;
+    transform: scale(0.3);
+    margin: -55px 0px 0px -65px;
+}
+
+/*socmed sprite pseudo-classes*/
+
+#fb:hover{
+    background: url('images/sprites.png') no-repeat -12px -299px;
+	width: 151px;
+	height: 151px;
+}
+#fb:active{
+    background: url('images/sprites.png') no-repeat -12px -299px;
+	width: 151px;
+	height: 151px;
+    transform: scale(0.27);
+}#ig:hover{
+    background: url('images/sprites.png') no-repeat -174px -299px;
+	width: 151px;
+	height: 151px;
+}
+#ig:active{
+    background: url('images/sprites.png') no-repeat -174px -299px;
+	width: 151px;
+	height: 151px;
+    transform: scale(0.27);
+}
+#twt:hover{
+    background: url('images/sprites.png') no-repeat -336px -299px;
+	width: 151px;
+	height: 151px;
+}
+#twt:active{
+    background: url('images/sprites.png') no-repeat -336px -299px;
+	width: 151px;
+	height: 151px;
+    transform: scale(0.27);
+}

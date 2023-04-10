@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refuge, Recover, Rediscover - Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style_login.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="images/logo.png" class="logo"></a>
+        <h5 class="title">We Advocate to Stop Domestic Violence.</h5>
+    </header>
+
+    <main>
+        <section>
+            <div class="card border-0" id="cardIntro">
+                <img class="card-img" src="images/wowow.png">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">REFUGE, RECOVER, REDISCOVER</h5>
+                    <p class="card-text"><br>WHAT IS DOMESTIC VIOLENCE?
+                        <br>It is any pattern of behavior used to inflict any pain (physical, emotional, psychological, etc.) on a loved one in order to manipulate, terrorize, humiliate, injure, and hurt them. Women, men, children, and anyone can be a victim of domestic violence.<br>
+                        <br>WHO ARE WE?
+                        <br>Refuge, Recover, Rediscover is an organization that aims to be a source of refuge, assistance, comfort, counseling, and information for victims of domestic violence. We aim to reveal the horrible impacts of domestic violence and to lessen its frequency of cases.<br>
+                        <br>WHY SHOULD YOU JOIN US?
+                        <br>We help spread the awareness about the dangers of domestic violence; this organization provides information about how to help victims, how to seek help as a victim, the warning signs of an abuser, and how to prevent being an abuser yourself. This organization also helps victims recover and rediscover themselves from what they have gone through.<br>
+                        <br>We aim to be a refuge, to help recover, and to help rediscover.</p>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <div class="card border-0" id="cardLogin" style="width: fit-content;">
+                <div class="card-header" style="background-color: #E69655;">Login to the organization!</div>
+                <div class="card-body rounded-bottom" style="background-color: #FFF3E2;">
+                    <p id="msgCheck">Please enter your login details.</p>
+                    <p class="user-pass">Username: <input type="text" id="username"><span id="uError"></span></p>
+                    <p class="user-pass">Password: <input type="password" id="password"><span id="pError"></span></p>
+                    <button class="btn" onclick="logCheck()">Log in</button>
+                    <hr>
+                    <a href="#">Forgot password?</a>
+                    <p>Don't have an account with us yet? <a href="#">Join us</a> to support our mission!</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="logo-title">
+            <a href="#"><img src="images/logo.png" class="logo"></a>
+            <h6 class="title">Refuge, Recover, Rediscover</h6>
+        </div>
+        <div class="contact">
+            <p class="c-head">CONTACT INFORMATION</p>
+            <p class="info">Philippine Science High School - Southern Mindanao Campus, Tugbok, Davao City
+                <br>@michangeline.emin@smc.pshs.edu.ph
+                <br>+63 942 806 6995
+            </p>
+            <a href="https://www.facebook.com/michangeline.emin/"><img id="fb" src="images/trans_img.png" height="1" width="1"></a>
+            <a href="https://www.instagram.com/geliiesz_m/"><img id="ig" src="images/trans_img.png" height="1" width="1"></a>
+            <a href="https://twitter.com/geliiesz_m/"><img id="twt" src="images/trans_img.png" height="1" width="1"></a>
+        </div>
+    </footer>
+</body>
+</html>
