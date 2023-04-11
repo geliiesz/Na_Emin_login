@@ -170,9 +170,12 @@ input:focus{
 /*link pseudo-classes*/
 
 /*sets different colors and text decorations when displayed, hovered on, and clicked on*/
-a:link, a:visited{
+a:link{
     text-decoration: none;
     color: #8E3B08;
+}a:visited{
+    text-decoration: none;
+    color: #C5530B;
 }
 a:hover{
     text-decoration: underline;
